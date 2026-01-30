@@ -9,3 +9,10 @@ if [ -f "$script_dir/post-create-custom.sh" ]; then
 	# shellcheck disable=SC1091
 	. "$script_dir/post-create-custom.sh"
 fi
+
+# Install Node.js version specified in .nvmrc
+# shellcheck disable=SC1091
+. "$NVM_DIR/nvm.sh"
+nvm install \
+	--alias=project
+nvm use
