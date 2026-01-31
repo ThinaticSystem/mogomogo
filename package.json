@@ -11,6 +11,10 @@
 	"main": "src/index.ts",
 	"scripts": {
 		"dev": "node src/index.ts",
+		"format": "oxfmt",
+		"format:dry": "oxfmt --check",
+		"lint": "oxlint --type-aware",
+		"lint:fix": "oxlint --type-aware --fix",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"devDependencies": {

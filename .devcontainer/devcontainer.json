@@ -19,8 +19,14 @@
 			"extensions": [
 				"EditorConfig.EditorConfig@0.18.1",
 				"ms-vscode-remote.remote-containers@0.444.0",
+				"oxc.oxc-vscode@1.44.0",
 				"timonwong.shellcheck@0.38.6"
-			]
+			],
+			"settings": {
+				"editor.defaultFormatter": "oxc.oxc-vscode",
+				"oxc.configPath": ".oxfmtrc.json",
+				"oxc.typeAware": true
+			}
 		}
 	}
 
