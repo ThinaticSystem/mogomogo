@@ -20,6 +20,9 @@
 		"test:run": "vitest run",
 		"check": "pnpm format:dry && pnpm lint && pnpm typecheck && pnpm test:run"
 	},
+	"dependencies": {
+		"cloudflare": "^5.2.0"
+	},
 	"devDependencies": {
 		"@types/node": "24 - 24.13",
 		"@typescript/native-preview": "7.0.0-dev.20260209.1",
