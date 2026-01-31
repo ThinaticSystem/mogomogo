@@ -28,6 +28,13 @@
 			"type": "npm",
 			"script": "lint:fix",
 			"problemMatcher": []
+		},
+		{
+			"label": "typecheck",
+			"detail": "Type check all files",
+			"type": "npm",
+			"script": "typecheck",
+			"problemMatcher": []
 		}
 	]
 }
