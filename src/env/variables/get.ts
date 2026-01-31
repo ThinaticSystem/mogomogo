@@ -17,6 +17,9 @@ const require = (key: string) =>
 export const getEnvironmentVariables = memoize(async () => {
 	await loadDotEnv();
 
-	return {} as const;
+	return {
+		CLOUDFLARE_CALLS_API_TOKEN: require("CLOUDFLARE_CALLS_API_TOKEN"),
+		CLOUDFLARE_ACCOUNT_ID: require("CLOUDFLARE_ACCOUNT_ID"),
+	} as const;
 });
 export type EnvironmentVariables = Awaited<ReturnType<typeof getEnvironmentVariables>>;
