@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@types/node':
+        specifier: 24 - 24.13
+        version: 24.10.12
       '@typescript/native-preview':
         specifier: 7.0.0-dev.20260209.1
         version: 7.0.0-dev.20260209.1
@@ -141,6 +144,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@types/node@24.10.12':
+    resolution: {integrity: sha512-68e+T28EbdmLSTkPgs3+UacC6rzmqrcWFPQs1C8mwJhI/r5Uxr0yEuQotczNRROd1gq30NGxee+fo0rSIxpyAw==}
+
   '@typescript/native-preview-darwin-arm64@7.0.0-dev.20260209.1':
     resolution: {integrity: sha512-TyFP7dGMo/Xz37MI3QNfGl3J2i8AKurYwLLD+bG0EDLWnz213wwBwN6U9vMcyatBzfdxKEHHPgdNP0UYCVx3kQ==}
     cpu: [arm64]
@@ -202,6 +208,9 @@ packages:
   tinypool@2.1.0:
     resolution: {integrity: sha512-Pugqs6M0m7Lv1I7FtxN4aoyToKg1C4tu+/381vH35y8oENM/Ai7f7C4StcoK4/+BSw9ebcS8jRiVrORFKCALLw==}
     engines: {node: ^20.0.0 || >=22.0.0}
+
+  undici-types@7.16.0:
+    resolution: {integrity: sha512-Zz+aZWSj8LE6zoxD+xrjh4VfkIG8Ya6LvYkZqtUQGJPZjYl53ypCaUwWqo7eI0x66KBGeRo+mlBEkMSeSZ38Nw==}
 
 snapshots:
 
@@ -271,6 +280,10 @@ snapshots:
   '@oxlint/win32-x64@1.43.0':
     optional: true
 
+  '@types/node@24.10.12':
+    dependencies:
+      undici-types: 7.16.0
+
   '@typescript/native-preview-darwin-arm64@7.0.0-dev.20260209.1':
     optional: true
 
@@ -337,3 +350,5 @@ snapshots:
       oxlint-tsgolint: 0.11.5
 
   tinypool@2.1.0: {}
+
+  undici-types@7.16.0: {}
