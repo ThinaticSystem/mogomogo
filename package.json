@@ -16,7 +16,8 @@
 		"lint": "oxlint --type-aware",
 		"lint:fix": "oxlint --type-aware --fix",
 		"typecheck": "tsgo --build",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "vitest watch",
+		"test:run": "vitest run"
 	},
 	"devDependencies": {
 		"@types/node": "24 - 24.13",
