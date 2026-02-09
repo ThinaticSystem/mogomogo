@@ -17,7 +17,8 @@
 		"lint:fix": "oxlint --type-aware --fix",
 		"typecheck": "tsgo --build",
 		"test": "vitest watch",
-		"test:run": "vitest run"
+		"test:run": "vitest run",
+		"check": "pnpm format:dry && pnpm lint && pnpm typecheck && pnpm test:run"
 	},
 	"devDependencies": {
 		"@types/node": "24 - 24.13",

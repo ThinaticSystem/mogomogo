@@ -42,6 +42,13 @@
 			"type": "npm",
 			"script": "test",
 			"problemMatcher": []
+		},
+		{
+			"label": "check",
+			"detail": "Run all checks: format, lint, typecheck, and tests without fixing",
+			"type": "npm",
+			"script": "check",
+			"problemMatcher": []
 		}
 	]
 }
