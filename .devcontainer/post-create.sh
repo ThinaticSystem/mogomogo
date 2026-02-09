@@ -16,3 +16,6 @@ fi
 nvm install \
 	--alias=project
 nvm use
+
+# Install pnpm dependencies
+pnpm install
