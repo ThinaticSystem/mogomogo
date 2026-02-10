@@ -4,3 +4,6 @@
 
 # TypeScript
 /tsconfig.*.tsbuildinfo
+
+# Environment variables
+/.env
