@@ -17,5 +17,11 @@ nvm install \
 	--alias=project
 nvm use
 
+# Install pnpm
+package_manager=$(npm info ./ packageManager)
+npm install \
+	--global \
+	"$package_manager"
+
 # Install pnpm dependencies
 pnpm install
