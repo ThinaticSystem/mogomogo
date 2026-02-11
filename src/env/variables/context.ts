@@ -24,9 +24,9 @@ export const runWithEnvironmentVariables = async <TReturn>(
 	return runWithContext([context], stage);
 };
 
-export const getEnvironmentVariables = function* (): Needs<
+export function* getEnvironmentVariables(): Needs<
 	EnvironmentVariablesContext,
 	EnvironmentVariables
 > {
 	return (yield* getContext<EnvironmentVariablesContext>())[EnvironmentVariablesToken];
-};
+}
