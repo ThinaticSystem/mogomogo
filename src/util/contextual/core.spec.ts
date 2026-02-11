@@ -9,7 +9,7 @@ import {
 } from "./core.ts";
 
 suite.concurrent("runWithContext()", () => {
-	suite.concurrent("provides context", () => {
+	suite.concurrent("provides same context values", () => {
 		suite.concurrent("top-level", () => {
 			test("sync", ({ expect }) => {
 				const AToken = Symbol("A");
@@ -185,7 +185,7 @@ suite.concurrent("runWithContext()", () => {
 		});
 	});
 
-	suite.concurrent("when empty context, returns empty object", () => {
+	suite.concurrent("when empty context, provides empty context", () => {
 		test("sync", ({ expect }) => {
 			runWithContext([], function* () {
 				yield (context) => {
@@ -210,7 +210,7 @@ suite.concurrent("runWithContext()", () => {
 });
 
 suite.concurrent("withContext(), withContextAsync()", () => {
-	suite.concurrent("provides additional context & parent context", () => {
+	suite.concurrent("provides same additional & parent values", () => {
 		test("sync (withContext())", ({ expect }) => {
 			const ParentToken = Symbol("Parent");
 			const ParentValue = Symbol("ParentValue");
@@ -312,7 +312,7 @@ suite.concurrent("withContext(), withContextAsync()", () => {
 		});
 	});
 
-	suite.concurrent("provides additional context & parent context multiple times", () => {
+	suite.concurrent("provides context multiple times", () => {
 		test("sync (withContext())", ({ expect }) => {
 			const ParentToken = Symbol("Parent");
 			const ParentValue = Symbol("ParentValue");
@@ -368,7 +368,7 @@ suite.concurrent("withContext(), withContextAsync()", () => {
 		});
 	});
 
-	suite.concurrent("when empty additional context, returns only parent context", () => {
+	suite.concurrent("when empty additional context, provides only parent context", () => {
 		test("sync (withContext())", ({ expect }) => {
 			const ParentToken = Symbol("Parent");
 			const ParentValue = Symbol("ParentValue");
