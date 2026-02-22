@@ -18,7 +18,9 @@
 		"typecheck": "tsgo --build",
 		"test": "vitest watch",
 		"test:run": "vitest run",
-		"check": "pnpm format:dry && pnpm lint && pnpm typecheck && pnpm test:run"
+		"codegen:realtime-api": "openapi-typescript https://developers.cloudflare.com/realtime/static/calls-api-2024-05-21.yaml --output ./src/server/web-rtc-server-provider/provider/cf-realtime/api-client/schema.ts",
+		"codegen:realtime-api:check": "pnpm codegen:realtime-api --check",
+		"check": "pnpm format:dry && pnpm lint && pnpm typecheck && pnpm test:run && pnpm codegen:realtime-api:check"
 	},
 	"dependencies": {
 		"cloudflare": "^6.0.0"

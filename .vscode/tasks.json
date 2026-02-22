@@ -44,8 +44,22 @@
 			"problemMatcher": []
 		},
 		{
+			"label": "codegen:realtime-api",
+			"detail": "Generate types for the Realtime API schema",
+			"type": "npm",
+			"script": "codegen:realtime-api",
+			"problemMatcher": []
+		},
+		{
+			"label": "codegen:realtime-api:check",
+			"detail": "Check if generated types match existing types for the Realtime API schema",
+			"type": "npm",
+			"script": "codegen:realtime-api:check",
+			"problemMatcher": []
+		},
+		{
 			"label": "check",
-			"detail": "Run all checks: format, lint, typecheck, and tests without fixing",
+			"detail": "Run all checks: format, lint, typecheck, tests, and ensure generated codes are up to date without fixing",
 			"type": "npm",
 			"script": "check",
 			"problemMatcher": []

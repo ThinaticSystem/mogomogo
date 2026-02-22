@@ -27,5 +27,5 @@
 		"builtin": true
 	},
 	"globals": {},
-	"ignorePatterns": []
+	"ignorePatterns": ["src/server/web-rtc-server-provider/provider/cf-realtime/api-client/schema.ts"]
 }
