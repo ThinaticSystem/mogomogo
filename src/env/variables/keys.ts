@@ -1,4 +1,6 @@
 export const ENVIRONMENT_VARIABLE_KEYS = {
+	/** For `create-cloudflare-sfu-app.ts` */
 	CLOUDFLARE_CALLS_API_TOKEN: "CLOUDFLARE_CALLS_API_TOKEN",
+	/** For `create-cloudflare-sfu-app.ts` */
 	CLOUDFLARE_ACCOUNT_ID: "CLOUDFLARE_ACCOUNT_ID",
 } as const;
