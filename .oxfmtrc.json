@@ -16,5 +16,6 @@
 			"unknown"
 		],
 		"partitionByComment": true
-	}
+	},
+	"embeddedLanguageFormatting": "off"
 }
