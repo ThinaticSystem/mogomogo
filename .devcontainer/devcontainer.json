@@ -20,7 +20,7 @@
 				"EditorConfig.EditorConfig@0.18.1",
 				"GitHub.vscode-github-actions@0.31.0",
 				"ms-vscode-remote.remote-containers@0.444.0",
-				"oxc.oxc-vscode@1.44.0",
+				"oxc.oxc-vscode@1.47.0",
 				"timonwong.shellcheck@0.38.6",
 				"TypeScriptTeam.native-preview@0.20260207.1",
 				"vitest.explorer@1.42.1"

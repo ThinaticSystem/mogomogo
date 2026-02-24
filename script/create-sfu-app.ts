@@ -4,14 +4,14 @@ console.warn(
 );
 console.warn("If you encounter an error, Use the Cloudflare dashboard to create the app instead.");
 
-import Cloudflare from "cloudflare";
-
+import type { EnvironmentVariablesContext } from "../src/env/variables/context.ts";
 import type { NeedsAsync } from "../src/util/contextual/core.ts";
+
+import Cloudflare from "cloudflare";
 
 import {
 	getEnvironmentVariables as getEnvironmentVariablesGlobal,
 	runWithEnvironmentVariables,
-	type EnvironmentVariablesContext,
 } from "../src/env/variables/context.ts";
 import { ENVIRONMENT_VARIABLE_KEYS } from "../src/env/variables/keys.ts";
 import { EnvironmentVariableValidators } from "../src/env/variables/validator.ts";
