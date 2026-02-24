@@ -1,12 +1,8 @@
+import type { Needs, NeedsAsync } from "./core.ts";
+
 import { suite, test } from "vitest";
 
-import {
-	runWithContext,
-	withContext,
-	withContextAsync,
-	type Needs,
-	type NeedsAsync,
-} from "./core.ts";
+import { runWithContext, withContext, withContextAsync } from "./core.ts";
 
 suite.concurrent("runWithContext()", () => {
 	suite.concurrent("provides same context values", () => {

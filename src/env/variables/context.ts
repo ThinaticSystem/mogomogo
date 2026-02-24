@@ -1,9 +1,9 @@
-import { runWithContext, type Needs, type NeedsAsync } from "../../util/contextual/core.ts";
+import type { Needs, NeedsAsync } from "../../util/contextual/core.ts";
+import type { EnvironmentVariables } from "./get.ts";
+
+import { runWithContext } from "../../util/contextual/core.ts";
 import { getContext } from "../../util/contextual/util.ts";
-import {
-	getEnvironmentVariables as _getEnvironmentVariables,
-	type EnvironmentVariables,
-} from "./get.ts";
+import { getEnvironmentVariables as _getEnvironmentVariables } from "./get.ts";
 
 export const EnvironmentVariablesToken = Symbol("environmentVariables");
 
