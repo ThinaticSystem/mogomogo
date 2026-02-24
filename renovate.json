@@ -16,5 +16,6 @@
 		"commitMessageAction": "Roll back"
 	},
 	"rebaseWhen": "behind-base-branch",
-	"labels": ["deps"]
+	"labels": ["deps"],
+	"automerge": true
 }
