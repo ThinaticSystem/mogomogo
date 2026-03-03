@@ -28,7 +28,7 @@
 		"@typescript/native-preview": "7.0.0-dev.20260303.1",
 		"oxfmt": "^0.36.0",
 		"oxlint": "^1.42.0",
-		"oxlint-tsgolint": "^0.15.0",
+		"oxlint-tsgolint": "^0.16.0",
 		"vitest": "^4.0.18"
 	},
 	"packageManager": "pnpm@10.30.3",
