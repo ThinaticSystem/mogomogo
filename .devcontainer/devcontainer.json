@@ -9,7 +9,8 @@
 			"version": "lts",
 			"pnpmVersion": "latest",
 			"nvmVersion": "latest"
-		}
+		},
+		"ghcr.io/tailscale/codespace/tailscale:1.0.8": {}
 	},
 	"workspaceFolder": "/mogomogo",
 	"workspaceMount": "source=${localWorkspaceFolder},target=${containerWorkspaceFolder},type=bind,consistency=cached",
