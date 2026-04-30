@@ -21,7 +21,7 @@
 		"check": "pnpm format:dry && pnpm lint && pnpm typecheck && pnpm test:run"
 	},
 	"dependencies": {
-		"cloudflare": "^5.2.0"
+		"cloudflare": "^6.0.0"
 	},
 	"devDependencies": {
 		"@types/node": "24 - 24.13",
