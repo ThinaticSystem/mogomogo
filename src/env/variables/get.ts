@@ -11,10 +11,11 @@ export const getEnvironmentVariables = memoize(async () => {
 	await loadDotEnv();
 
 	const { optional } = new EnvironmentVariableValidators(process.env);
-	const KEYS = ENVIRONMENT_VARIABLE_KEYS;
-	return {
-		CLOUDFLARE_CALLS_API_TOKEN: optional(KEYS.CLOUDFLARE_CALLS_API_TOKEN),
-		CLOUDFLARE_ACCOUNT_ID: optional(KEYS.CLOUDFLARE_ACCOUNT_ID),
-	} as const;
+	return Object //
+		.values(ENVIRONMENT_VARIABLE_KEYS)
+		.reduce(
+			(acc, key) => Object.assign(acc, { [key]: optional(key) }),
+			{} as { [_ in keyof typeof ENVIRONMENT_VARIABLE_KEYS]: undefined | string },
+		);
 });
 export type EnvironmentVariables = Awaited<ReturnType<typeof getEnvironmentVariables>>;

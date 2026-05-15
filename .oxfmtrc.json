@@ -1,5 +1,9 @@
 {
 	"$schema": "./node_modules/oxfmt/configuration_schema.json",
+	"ignorePatterns": [
+		".devcontainer/devcontainer-lock.json",
+		"src/server/web-rtc-server-provider/provider/cf-realtime/api-client/schema.ts"
+	],
 	"useTabs": true,
 	"sortImports": {
 		"groups": [
@@ -12,5 +16,6 @@
 			"unknown"
 		],
 		"partitionByComment": true
-	}
+	},
+	"embeddedLanguageFormatting": "off"
 }
