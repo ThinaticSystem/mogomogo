@@ -10,7 +10,7 @@ importers:
     dependencies:
       cloudflare:
         specifier: ^7.0.0
-        version: 7.0.0
+        version: 7.1.0
     devDependencies:
       '@types/node':
         specifier: 24 - 24.16
@@ -703,8 +703,8 @@ packages:
     resolution: {integrity: sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==}
     engines: {node: '>=18'}
 
-  cloudflare@7.0.0:
-    resolution: {integrity: sha512-ZU8Yp1biaRRf+i1Hlap/VUwSBeKnOa4kkygIU9naE07JILnHdgLr9Wq/iPEeEf2in0N5m1giTp1ohY+cNQZEGQ==}
+  cloudflare@7.1.0:
+    resolution: {integrity: sha512-eb6WtiAbhuqdWmBdVo6fuXQgEBkYjhOeujRDYLEUWEZIECuABvDLz2DUYTwpN/4KyFecM4JtMHgZn5prlFUjLg==}
     hasBin: true
 
   convert-source-map@2.0.0:
@@ -1301,7 +1301,7 @@ snapshots:
 
   chai@6.2.2: {}
 
-  cloudflare@7.0.0: {}
+  cloudflare@7.1.0: {}
 
   convert-source-map@2.0.0: {}
 
