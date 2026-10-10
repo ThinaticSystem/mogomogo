@@ -168,7 +168,7 @@ importers:
     dependencies:
       cloudflare:
         specifier: ^7.0.0
-        version: 7.1.0
+        version: 7.2.0
     devDependencies:
       '@types/node':
         specifier: 24 - 24.19
@@ -850,8 +850,8 @@ packages:
     resolution: {integrity: sha512-NUPRluOfOiTKBKvWPtSD4PhFvWCqOi0BGStNWs57X9js7XGTprSmFoz5F0tWhR4WPjNeR9jXqdC7/UpSJTnlRg==}
     engines: {node: '>=18'}
 
-  cloudflare@7.1.0:
-    resolution: {integrity: sha512-eb6WtiAbhuqdWmBdVo6fuXQgEBkYjhOeujRDYLEUWEZIECuABvDLz2DUYTwpN/4KyFecM4JtMHgZn5prlFUjLg==}
+  cloudflare@7.2.0:
+    resolution: {integrity: sha512-Y0ieFi/VOGsUeJmOWwuzztTQZ5HgvNqa7I6IaGBf9wS4Q2xjNmRfyHls741HlveI4DSTribs7YHaTjhKvNcRsw==}
     hasBin: true
 
   es-module-lexer@2.3.2:
@@ -1408,7 +1408,7 @@ snapshots:
 
   chai@6.2.2: {}
 
-  cloudflare@7.1.0: {}
+  cloudflare@7.2.0: {}
 
   es-module-lexer@2.3.2: {}
 
