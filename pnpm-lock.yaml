@@ -171,7 +171,7 @@ importers:
         version: 7.1.0
     devDependencies:
       '@types/node':
-        specifier: 24 - 24.16
+        specifier: 24 - 24.19
         version: 24.10.12
       '@typescript/native-preview':
         specifier: 7.0.0-dev.20260707.2
