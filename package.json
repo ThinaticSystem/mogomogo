@@ -24,7 +24,7 @@
 		"cloudflare": "^7.0.0"
 	},
 	"devDependencies": {
-		"@types/node": "24 - 24.19",
+		"@types/node": "24 - 26.6",
 		"@typescript/native-preview": "7.0.0-dev.20260707.2",
 		"oxfmt": "^0.73.0",
 		"oxlint": "^1.42.0",
